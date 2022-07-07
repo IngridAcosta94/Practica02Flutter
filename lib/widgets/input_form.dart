@@ -8,9 +8,9 @@ final String? labelText, hintText, errorText, helperText, value;
   final bool focused, autoValidation, readOnly;
   final TextInputType keyboardType;
   final bool isRequired;
+  final String prueba;
 
-
-
+//Este es un comentario
   const InputForm({Key? key,
   this.labelText = '',
   required this.hintText,
@@ -23,7 +23,7 @@ final String? labelText, hintText, errorText, helperText, value;
   this.readOnly = false,
   this.keyboardType = TextInputType.text,
   this.isRequired = false,
-  
+  this.prueba = "",
   }) : super(key: key);
 
 
