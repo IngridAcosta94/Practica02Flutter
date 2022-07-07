@@ -1,11 +1,4 @@
 
-
-
-
-
-
-
-
 import 'package:flutter/material.dart';
 
 class InputForm extends StatelessWidget {
@@ -19,16 +12,16 @@ final String? labelText, hintText, errorText, helperText, value;
 
 
   const InputForm({Key? key,
-  required this.labelText,
+  this.labelText = '',
   required this.hintText,
-  required this.errorText,
-  required this.helperText,
-  required this.value,
-  required this.icon,
-  required this.focused,
-  required this.autoValidation,
-  required this.readOnly,
-  required this.keyboardType,
+ this.errorText= '',
+   this.helperText= '',
+ this.value = '',
+   this.icon,
+  this.focused = false,
+  this.autoValidation = false,
+  this.readOnly = false,
+  this.keyboardType = TextInputType.text,
   this.isRequired = false,
   
   }) : super(key: key);
